@@ -1,0 +1,34 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Crawl delay
+Crawl-delay: 10
+
+# Sitemap
+Sitemap: https://pm-compare.vercel.app/sitemap.xml
+
+# Host
+Host: https://pm-compare.vercel.app
+
+# Googlebot specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+# Bingbot
+User-agent: bingbot
+Allow: /
+Crawl-delay: 10
+
+# Bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

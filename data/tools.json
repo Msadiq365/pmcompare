@@ -1,0 +1,930 @@
+{
+  "tools": [
+    {
+      "id": "asana",
+      "name": "Asana",
+      "tagline": "Work on big ideas, without the busywork",
+      "logo_url": "https://logo.clearbit.com/asana.com",
+      "website": "https://asana.com",
+      "pricing": {
+        "free": true,
+        "starter": 10.99,
+        "advanced": 24.99,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.4,
+      "best_for": "Small to medium teams needing straightforward task management",
+      "ideal_team_size": "5-50 people",
+      "top_features": [
+        "Timeline view (Gantt charts)",
+        "Custom fields and forms",
+        "Task dependencies",
+        "100+ integrations",
+        "Portfolio management",
+        "Workload management"
+      ],
+      "pros": [
+        "Very intuitive interface with minimal learning curve",
+        "Generous free plan (up to 15 users)",
+        "Excellent mobile apps for iOS and Android",
+        "Strong task dependency features",
+        "Great for marketing and creative teams"
+      ],
+      "cons": [
+        "Reporting features limited on lower tiers",
+        "Can become expensive for large teams",
+        "Time tracking requires third-party integration",
+        "Limited customization compared to competitors"
+      ],
+      "use_cases": [
+        "Marketing campaign management",
+        "Product launches",
+        "Creative team workflows",
+        "Event planning"
+      ],
+      "integrations": ["Slack", "Google Drive", "Microsoft Teams", "Salesforce", "Adobe Creative Cloud"],
+      "affiliate_link": "https://asana.com/?ref=yoursite"
+    },
+    {
+      "id": "monday",
+      "name": "Monday.com",
+      "tagline": "A platform built for a new way of working",
+      "logo_url": "https://logo.clearbit.com/monday.com",
+      "website": "https://monday.com",
+      "pricing": {
+        "free": true,
+        "basic": 8,
+        "standard": 10,
+        "pro": 16,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.6,
+      "best_for": "Teams that need visual workflows and extensive customization",
+      "ideal_team_size": "10-200 people",
+      "top_features": [
+        "Highly visual kanban boards",
+        "Extensive automation capabilities",
+        "Custom dashboard creation",
+        "200+ templates",
+        "Advanced reporting and analytics",
+        "CRM functionality built-in"
+      ],
+      "pros": [
+        "Extremely customizable for any workflow",
+        "Beautiful, colorful, visual interface",
+        "Strong automation features reduce manual work",
+        "Excellent for cross-functional teams",
+        "Built-in time tracking"
+      ],
+      "cons": [
+        "Can be overwhelming for simple use cases",
+        "Pricing adds up quickly with add-ons",
+        "Steeper learning curve than competitors",
+        "Free plan very limited (2 users only)"
+      ],
+      "use_cases": [
+        "Sales pipeline management",
+        "Software development sprints",
+        "Marketing operations",
+        "HR onboarding processes"
+      ],
+      "integrations": ["Slack", "Zoom", "Gmail", "Outlook", "Salesforce"],
+      "affiliate_link": "https://monday.com/?ref=yoursite"
+    },
+    {
+      "id": "clickup",
+      "name": "ClickUp",
+      "tagline": "One app to replace them all",
+      "logo_url": "https://logo.clearbit.com/clickup.com",
+      "website": "https://clickup.com",
+      "pricing": {
+        "free": true,
+        "unlimited": 7,
+        "business": 12,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.7,
+      "best_for": "Power users who want maximum features and customization",
+      "ideal_team_size": "5-500 people",
+      "top_features": [
+        "Everything view (all work in one place)",
+        "Multiple view types (15+ views)",
+        "Native time tracking",
+        "Goals and OKRs tracking",
+        "Document collaboration (Docs)",
+        "Whiteboard functionality"
+      ],
+      "pros": [
+        "Most feature-rich platform on the market",
+        "Excellent free plan with unlimited tasks",
+        "Built-in time tracking and goal management",
+        "Highly customizable workflows",
+        "Aggressive pricing compared to competitors"
+      ],
+      "cons": [
+        "Overwhelming amount of features for beginners",
+        "Interface can feel cluttered",
+        "Performance issues with very large workspaces",
+        "Mobile app less polished than desktop"
+      ],
+      "use_cases": [
+        "Agile software development",
+        "Agency client management",
+        "Remote team collaboration",
+        "Personal productivity"
+      ],
+      "integrations": ["Slack", "GitHub", "GitLab", "Figma", "Harvest"],
+      "affiliate_link": "https://clickup.com/?ref=yoursite"
+    },
+    {
+      "id": "trello",
+      "name": "Trello",
+      "tagline": "Trello brings all your tasks, teammates, and tools together",
+      "logo_url": "https://logo.clearbit.com/trello.com",
+      "website": "https://trello.com",
+      "pricing": {
+        "free": true,
+        "standard": 5,
+        "premium": 10,
+        "enterprise": 17.50,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.5,
+      "best_for": "Simple kanban-style project management and personal task tracking",
+      "ideal_team_size": "1-20 people",
+      "top_features": [
+        "Simple kanban board interface",
+        "Power-Ups (integrations and extensions)",
+        "Butler automation",
+        "Card templates",
+        "Calendar view",
+        "Board templates"
+      ],
+      "pros": [
+        "Extremely simple and easy to learn",
+        "Perfect for visual thinkers",
+        "Strong free plan for small teams",
+        "Large ecosystem of Power-Ups",
+        "Owned by Atlassian (reliable)"
+      ],
+      "cons": [
+        "Limited features for complex projects",
+        "No native time tracking",
+        "Lacks advanced reporting",
+        "Not ideal for large-scale project management"
+      ],
+      "use_cases": [
+        "Personal task management",
+        "Content calendar planning",
+        "Simple team collaboration",
+        "Agile sprint boards"
+      ],
+      "integrations": ["Slack", "Google Drive", "Jira", "Confluence", "Dropbox"],
+      "affiliate_link": "https://trello.com/?ref=yoursite"
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "tagline": "Your wiki, docs & projects. Together",
+      "logo_url": "https://logo.clearbit.com/notion.so",
+      "website": "https://notion.so",
+      "pricing": {
+        "free": true,
+        "plus": 8,
+        "business": 15,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.7,
+      "best_for": "Teams wanting combined wiki, docs, and lightweight project management",
+      "ideal_team_size": "1-100 people",
+      "top_features": [
+        "All-in-one workspace (docs + databases)",
+        "Flexible database views",
+        "Rich text editing and embeds",
+        "Templates and blocks",
+        "Real-time collaboration",
+        "API for custom integrations"
+      ],
+      "pros": [
+        "Incredible flexibility - can be anything",
+        "Beautiful, clean interface",
+        "Excellent for documentation and knowledge base",
+        "Strong community and templates",
+        "Generous free plan for individuals"
+      ],
+      "cons": [
+        "Not purpose-built for project management",
+        "Can be slow with large databases",
+        "Learning curve to master features",
+        "Limited native integrations"
+      ],
+      "use_cases": [
+        "Company wiki and documentation",
+        "Personal knowledge management",
+        "Lightweight project tracking",
+        "Product roadmaps"
+      ],
+      "integrations": ["Slack", "Google Drive", "Figma", "GitHub", "Zapier"],
+      "affiliate_link": "https://notion.so/?ref=yoursite"
+    },
+    {
+      "id": "basecamp",
+      "name": "Basecamp",
+      "tagline": "All the tools your team needs in one place",
+      "logo_url": "https://logo.clearbit.com/basecamp.com",
+      "website": "https://basecamp.com",
+      "pricing": {
+        "free": true,
+        "pro": 299,
+        "currency": "USD",
+        "billing": "flat rate/month (unlimited users)"
+      },
+      "rating": 4.3,
+      "best_for": "Teams wanting simple, flat-rate pricing with unlimited users",
+      "ideal_team_size": "5-unlimited",
+      "top_features": [
+        "Message boards for discussions",
+        "To-do lists with assignments",
+        "Schedules and milestones",
+        "Document and file storage",
+        "Real-time group chat (Campfires)",
+        "Automatic check-ins"
+      ],
+      "pros": [
+        "Flat pricing regardless of team size",
+        "Very simple and straightforward to use",
+        "Great for remote teams",
+        "No per-user costs",
+        "Excellent customer support"
+      ],
+      "cons": [
+        "Limited customization options",
+        "No advanced reporting or analytics",
+        "Cannot assign tasks to multiple people",
+        "Lacks Gantt charts and timeline views"
+      ],
+      "use_cases": [
+        "Remote team communication",
+        "Client project management",
+        "Small business operations",
+        "Freelance project coordination"
+      ],
+      "integrations": ["Zapier", "Slack", "Google Calendar", "Time tracking tools", "Email"],
+      "affiliate_link": "https://basecamp.com/?ref=yoursite"
+    },
+    {
+      "id": "wrike",
+      "name": "Wrike",
+      "tagline": "Versatile project management software",
+      "logo_url": "https://logo.clearbit.com/wrike.com",
+      "website": "https://wrike.com",
+      "pricing": {
+        "free": true,
+        "professional": 9.80,
+        "business": 24.80,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.2,
+      "best_for": "Enterprise teams needing advanced project management and reporting",
+      "ideal_team_size": "20-1000+ people",
+      "top_features": [
+        "Advanced Gantt charts and dependencies",
+        "Custom workflows and request forms",
+        "Real-time reporting and dashboards",
+        "Resource management",
+        "Proofing and approval workflows",
+        "Cross-tagging across projects"
+      ],
+      "pros": [
+        "Extremely powerful for complex projects",
+        "Excellent reporting and analytics",
+        "Strong enterprise features and security",
+        "Good for marketing and creative teams",
+        "Flexible project views"
+      ],
+      "cons": [
+        "Steep learning curve for new users",
+        "Interface can feel outdated",
+        "More expensive than competitors",
+        "Free plan is very limited"
+      ],
+      "use_cases": [
+        "Enterprise project management",
+        "Marketing campaign tracking",
+        "Product development",
+        "Professional services"
+      ],
+      "integrations": ["Salesforce", "Adobe Creative Cloud", "Microsoft Teams", "Slack", "Google Drive"],
+      "affiliate_link": "https://wrike.com/?ref=yoursite"
+    },
+    {
+      "id": "smartsheet",
+      "name": "Smartsheet",
+      "tagline": "Where work gets done",
+      "logo_url": "https://logo.clearbit.com/smartsheet.com",
+      "website": "https://smartsheet.com",
+      "pricing": {
+        "free": false,
+        "pro": 7,
+        "business": 25,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.4,
+      "best_for": "Teams who love spreadsheets but need project management features",
+      "ideal_team_size": "10-500 people",
+      "top_features": [
+        "Spreadsheet-like interface",
+        "Automated workflows",
+        "Gantt charts and card view",
+        "Resource management",
+        "Dynamic forms and reports",
+        "Enterprise-grade security"
+      ],
+      "pros": [
+        "Familiar spreadsheet interface",
+        "Powerful automation capabilities",
+        "Excellent for data-heavy projects",
+        "Strong enterprise features",
+        "Great reporting and dashboards"
+      ],
+      "cons": [
+        "No free plan available",
+        "Can be expensive for small teams",
+        "Learning curve for advanced features",
+        "Mobile app less intuitive"
+      ],
+      "use_cases": [
+        "Program management",
+        "Construction project tracking",
+        "IT project management",
+        "Financial planning"
+      ],
+      "integrations": ["Microsoft Office 365", "Google Workspace", "Salesforce", "Jira", "Slack"],
+      "affiliate_link": "https://smartsheet.com/?ref=yoursite"
+    },
+    {
+      "id": "airtable",
+      "name": "Airtable",
+      "tagline": "Connected apps for building your business",
+      "logo_url": "https://logo.clearbit.com/airtable.com",
+      "website": "https://airtable.com",
+      "pricing": {
+        "free": true,
+        "plus": 10,
+        "pro": 20,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.6,
+      "best_for": "Teams needing flexible databases with project management capabilities",
+      "ideal_team_size": "5-200 people",
+      "top_features": [
+        "Spreadsheet-database hybrid",
+        "Multiple views (Grid, Calendar, Kanban, Gallery)",
+        "Powerful linking and relationships",
+        "Custom apps and interfaces",
+        "Automation builder",
+        "Rich field types"
+      ],
+      "pros": [
+        "Extremely flexible and customizable",
+        "Beautiful, modern interface",
+        "Great for content management",
+        "Powerful API for integrations",
+        "Excellent mobile apps"
+      ],
+      "cons": [
+        "Not purpose-built for project management",
+        "Can get complex quickly",
+        "Expensive for large teams",
+        "Limited free plan (1,200 records per base)"
+      ],
+      "use_cases": [
+        "Content calendar management",
+        "Product roadmap tracking",
+        "CRM and sales pipeline",
+        "Inventory management"
+      ],
+      "integrations": ["Slack", "Google Drive", "Dropbox", "Mailchimp", "Zapier"],
+      "affiliate_link": "https://airtable.com/?ref=yoursite"
+    },
+    {
+      "id": "jira",
+      "name": "Jira",
+      "tagline": "The #1 software development tool used by agile teams",
+      "logo_url": "https://logo.clearbit.com/atlassian.com",
+      "website": "https://jira.atlassian.com",
+      "pricing": {
+        "free": true,
+        "standard": 7.75,
+        "premium": 15.25,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.3,
+      "best_for": "Software development teams using agile methodologies",
+      "ideal_team_size": "5-1000+ people",
+      "top_features": [
+        "Scrum and Kanban boards",
+        "Sprint planning and tracking",
+        "Roadmaps and backlogs",
+        "Advanced reporting (velocity, burndown)",
+        "Developer tool integrations",
+        "Custom workflows"
+      ],
+      "pros": [
+        "Industry standard for software development",
+        "Powerful agile features (Scrum, Kanban)",
+        "Deep integration with developer tools",
+        "Highly customizable",
+        "Excellent for bug tracking"
+      ],
+      "cons": [
+        "Steep learning curve",
+        "Can be overwhelming for non-technical users",
+        "Interface feels dated",
+        "Not ideal for non-software projects"
+      ],
+      "use_cases": [
+        "Agile software development",
+        "Bug and issue tracking",
+        "DevOps workflows",
+        "Product management"
+      ],
+      "integrations": ["GitHub", "Bitbucket", "Confluence", "Slack", "Microsoft Teams"],
+      "affiliate_link": "https://jira.atlassian.com/?ref=yoursite"
+    },
+    {
+      "id": "teamwork",
+      "name": "Teamwork",
+      "tagline": "Deliver work on time and on budget",
+      "logo_url": "https://logo.clearbit.com/teamwork.com",
+      "website": "https://teamwork.com",
+      "pricing": {
+        "free": true,
+        "starter": 5.99,
+        "deliver": 9.99,
+        "grow": 19.99,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.4,
+      "best_for": "Client-facing teams and agencies managing billable work",
+      "ideal_team_size": "5-100 people",
+      "top_features": [
+        "Time tracking and billing",
+        "Client access and permissions",
+        "Workload and resource management",
+        "Profitability tracking",
+        "Task dependencies",
+        "Project templates"
+      ],
+      "pros": [
+        "Excellent for client work and agencies",
+        "Built-in time tracking and invoicing",
+        "Strong profitability features",
+        "Good project templates",
+        "Reasonable pricing"
+      ],
+      "cons": [
+        "Interface can feel busy",
+        "Learning curve for all features",
+        "Mobile app needs improvement",
+        "Reporting could be more intuitive"
+      ],
+      "use_cases": [
+        "Agency client management",
+        "Professional services",
+        "Consulting projects",
+        "Billable work tracking"
+      ],
+      "integrations": ["Slack", "HubSpot", "Xero", "QuickBooks", "Google Drive"],
+      "affiliate_link": "https://teamwork.com/?ref=yoursite"
+    },
+    {
+      "id": "zoho-projects",
+      "name": "Zoho Projects",
+      "tagline": "Plan, track and collaborate with ease",
+      "logo_url": "https://logo.clearbit.com/zoho.com",
+      "website": "https://zoho.com/projects",
+      "pricing": {
+        "free": true,
+        "premium": 4,
+        "enterprise": 9,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.3,
+      "best_for": "Budget-conscious teams wanting comprehensive features",
+      "ideal_team_size": "10-200 people",
+      "top_features": [
+        "Gantt charts and dependencies",
+        "Time tracking and timesheets",
+        "Issue tracking",
+        "Document management",
+        "Project blueprints",
+        "Resource utilization charts"
+      ],
+      "pros": [
+        "Very affordable pricing",
+        "Comprehensive feature set",
+        "Good integration with Zoho ecosystem",
+        "Solid free plan for small teams",
+        "Good for traditional project management"
+      ],
+      "cons": [
+        "Interface feels dated",
+        "Less intuitive than competitors",
+        "Mobile apps need improvement",
+        "Customer support could be better"
+      ],
+      "use_cases": [
+        "Traditional project management",
+        "IT project tracking",
+        "Small business operations",
+        "Budget-conscious teams"
+      ],
+      "integrations": ["Zoho CRM", "Zoho Desk", "Google Workspace", "Slack", "Microsoft Teams"],
+      "affiliate_link": "https://zoho.com/projects/?ref=yoursite"
+    },
+    {
+      "id": "podio",
+      "name": "Podio",
+      "tagline": "Flexible work management platform",
+      "logo_url": "https://logo.clearbit.com/podio.com",
+      "website": "https://podio.com",
+      "pricing": {
+        "free": true,
+        "basic": 7.20,
+        "plus": 11.20,
+        "premium": 19.20,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.2,
+      "best_for": "Teams wanting highly customizable workflows and apps",
+      "ideal_team_size": "5-100 people",
+      "top_features": [
+        "Custom app builder",
+        "Workflow automation",
+        "Visual reports and dashboards",
+        "File sharing and collaboration",
+        "Mobile app",
+        "Social collaboration features"
+      ],
+      "pros": [
+        "Highly customizable workflows",
+        "Can build custom apps without coding",
+        "Good for process-driven work",
+        "Reasonable pricing",
+        "Free plan available"
+      ],
+      "cons": [
+        "Steep learning curve",
+        "Interface feels outdated",
+        "Performance issues with large datasets",
+        "Limited native integrations"
+      ],
+      "use_cases": [
+        "Custom workflow management",
+        "Sales pipeline tracking",
+        "Project and task management",
+        "Team collaboration"
+      ],
+      "integrations": ["Google Drive", "Dropbox", "Zendesk", "Evernote", "ShareFile"],
+      "affiliate_link": "https://podio.com/?ref=yoursite"
+    },
+    {
+      "id": "proofhub",
+      "name": "ProofHub",
+      "tagline": "One place for all your projects and team communication",
+      "logo_url": "https://logo.clearbit.com/proofhub.com",
+      "website": "https://proofhub.com",
+      "pricing": {
+        "free": false,
+        "essential": 45,
+        "ultimate": 89,
+        "currency": "USD",
+        "billing": "flat rate/month (unlimited users)"
+      },
+      "rating": 4.5,
+      "best_for": "Teams wanting flat-rate pricing with proofing features",
+      "ideal_team_size": "10-unlimited",
+      "top_features": [
+        "Flat-rate pricing (unlimited users)",
+        "Online proofing and approval",
+        "Gantt charts",
+        "Time tracking",
+        "Built-in chat",
+        "Custom roles and permissions"
+      ],
+      "pros": [
+        "Flat pricing regardless of users",
+        "Great for creative teams (proofing)",
+        "All-in-one solution",
+        "No per-user costs",
+        "Good customer support"
+      ],
+      "cons": [
+        "No free plan available",
+        "Less customizable than competitors",
+        "Interface could be more modern",
+        "Limited third-party integrations"
+      ],
+      "use_cases": [
+        "Creative team collaboration",
+        "Design approval workflows",
+        "Marketing project management",
+        "Agency work"
+      ],
+      "integrations": ["Google Drive", "Dropbox", "OneDrive", "Box", "FreshBooks"],
+      "affiliate_link": "https://proofhub.com/?ref=yoursite"
+    },
+    {
+      "id": "paymo",
+      "name": "Paymo",
+      "tagline": "Project management and time tracking for small businesses",
+      "logo_url": "https://logo.clearbit.com/paymo.biz",
+      "website": "https://paymo.biz",
+      "pricing": {
+        "free": true,
+        "starter": 4.95,
+        "small-office": 9.95,
+        "business": 20.79,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.6,
+      "best_for": "Freelancers and small businesses needing time tracking and invoicing",
+      "ideal_team_size": "1-50 people",
+      "top_features": [
+        "Automatic time tracking",
+        "Invoicing and billing",
+        "Kanban boards and Gantt charts",
+        "Resource scheduling",
+        "Expense tracking",
+        "Client portal"
+      ],
+      "pros": [
+        "Excellent time tracking features",
+        "Built-in invoicing saves time",
+        "Very affordable for small teams",
+        "Good free plan for freelancers",
+        "Clean, intuitive interface"
+      ],
+      "cons": [
+        "Limited features for large teams",
+        "Fewer integrations than competitors",
+        "Reporting could be more advanced",
+        "Not ideal for complex projects"
+      ],
+      "use_cases": [
+        "Freelance project management",
+        "Small agency work",
+        "Billable hours tracking",
+        "Client project management"
+      ],
+      "integrations": ["Zapier", "Google Calendar", "Slack", "QuickBooks", "Xero"],
+      "affiliate_link": "https://paymo.biz/?ref=yoursite"
+    },
+    {
+      "id": "hive",
+      "name": "Hive",
+      "tagline": "Move faster together",
+      "logo_url": "https://logo.clearbit.com/hive.com",
+      "website": "https://hive.com",
+      "pricing": {
+        "free": true,
+        "teams": 12,
+        "enterprise": 0,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.6,
+      "best_for": "Fast-moving teams wanting flexible views and native time tracking",
+      "ideal_team_size": "10-500 people",
+      "top_features": [
+        "Multiple project views (Gantt, Kanban, Calendar, Table)",
+        "Native time tracking",
+        "Proofing and approvals",
+        "Goals and analytics",
+        "Resourcing",
+        "Forms and templates"
+      ],
+      "pros": [
+        "Very flexible with multiple views",
+        "Fast and responsive interface",
+        "Good native features (less need for integrations)",
+        "Excellent customer support",
+        "Strong analytics"
+      ],
+      "cons": [
+        "Can be pricey for larger teams",
+        "Learning curve for all features",
+        "Mobile app needs improvement",
+        "Some features require higher tiers"
+      ],
+      "use_cases": [
+        "Agile team management",
+        "Marketing operations",
+        "Product development",
+        "Cross-functional projects"
+      ],
+      "integrations": ["Slack", "Zoom", "Google Drive", "Dropbox", "Salesforce"],
+      "affiliate_link": "https://hive.com/?ref=yoursite"
+    },
+    {
+      "id": "infinity",
+      "name": "Infinity",
+      "tagline": "Organize everything. Achieve anything",
+      "logo_url": "https://logo.clearbit.com/startinfinity.com",
+      "website": "https://startinfinity.com",
+      "pricing": {
+        "free": true,
+        "plus": 7,
+        "business": 10,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.7,
+      "best_for": "Teams needing highly flexible and customizable project structures",
+      "ideal_team_size": "5-200 people",
+      "top_features": [
+        "Six different views (Table, Kanban, Gantt, Calendar, List, Form)",
+        "Custom attributes and fields",
+        "Advanced filtering and sorting",
+        "Workspaces and folders",
+        "Automations",
+        "Templates"
+      ],
+      "pros": [
+        "Extremely flexible and customizable",
+        "Beautiful, modern interface",
+        "Very affordable pricing",
+        "Great for organizing any type of work",
+        "Good free plan"
+      ],
+      "cons": [
+        "Newer platform (less established)",
+        "Fewer third-party integrations",
+        "Learning curve for customization",
+        "Some advanced features still in development"
+      ],
+      "use_cases": [
+        "Product management",
+        "Content planning",
+        "CRM and sales",
+        "Personal organization"
+      ],
+      "integrations": ["Zapier", "Slack", "Gmail", "Google Calendar", "Clockify"],
+      "affiliate_link": "https://startinfinity.com/?ref=yoursite"
+    },
+    {
+      "id": "scoro",
+      "name": "Scoro",
+      "tagline": "End-to-end work management software",
+      "logo_url": "https://logo.clearbit.com/scoro.com",
+      "website": "https://scoro.com",
+      "pricing": {
+        "free": false,
+        "essential": 26,
+        "standard": 37,
+        "pro": 63,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.5,
+      "best_for": "Professional services firms needing comprehensive business management",
+      "ideal_team_size": "10-200 people",
+      "top_features": [
+        "Project management and planning",
+        "Time tracking and billing",
+        "CRM and sales pipeline",
+        "Financial management",
+        "Resource planning",
+        "Advanced reporting"
+      ],
+      "pros": [
+        "All-in-one business management solution",
+        "Strong financial and billing features",
+        "Excellent for professional services",
+        "Comprehensive reporting",
+        "Good resource management"
+      ],
+      "cons": [
+        "More expensive than competitors",
+        "No free plan",
+        "Steep learning curve",
+        "Can be overkill for simple projects"
+      ],
+      "use_cases": [
+        "Consulting firms",
+        "Marketing agencies",
+        "Creative services",
+        "Professional services"
+      ],
+      "integrations": ["Xero", "QuickBooks", "Google Workspace", "Outlook", "Slack"],
+      "affiliate_link": "https://scoro.com/?ref=yoursite"
+    },
+    {
+      "id": "ntask",
+      "name": "nTask",
+      "tagline": "Simple task and project management",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/NTask_Logo.png/200px-NTask_Logo.png",
+      "website": "https://ntaskmanager.com",
+      "pricing": {
+        "free": true,
+        "premium": 3,
+        "business": 8,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.4,
+      "best_for": "Budget-conscious teams needing basic project management",
+      "ideal_team_size": "5-50 people",
+      "top_features": [
+        "Task management and to-do lists",
+        "Gantt charts",
+        "Time tracking",
+        "Meeting management",
+        "Risk management",
+        "Issue tracking"
+      ],
+      "pros": [
+        "Very affordable pricing",
+        "Simple and easy to use",
+        "Good free plan",
+        "All essential features included",
+        "Clean interface"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Fewer integrations than competitors",
+        "Basic reporting features",
+        "Not suitable for complex projects"
+      ],
+      "use_cases": [
+        "Small team collaboration",
+        "Basic project tracking",
+        "Meeting management",
+        "Personal productivity"
+      ],
+      "integrations": ["Slack", "Google Calendar", "Zoom", "Outlook", "Zapier"],
+      "affiliate_link": "https://ntaskmanager.com/?ref=yoursite"
+    },
+    {
+      "id": "microsoft-project",
+      "name": "Microsoft Project",
+      "tagline": "Project management for the way you work",
+      "logo_url": "https://logo.clearbit.com/microsoft.com",
+      "website": "https://microsoft.com/project",
+      "pricing": {
+        "free": false,
+        "project-plan-1": 10,
+        "project-plan-3": 30,
+        "project-plan-5": 55,
+        "currency": "USD",
+        "billing": "per user/month"
+      },
+      "rating": 4.0,
+      "best_for": "Traditional project managers using Microsoft ecosystem",
+      "ideal_team_size": "10-1000+ people",
+      "top_features": [
+        "Advanced Gantt charts",
+        "Resource leveling",
+        "Critical path analysis",
+        "Baseline and variance tracking",
+        "Microsoft 365 integration",
+        "Power BI reporting"
+      ],
+      "pros": [
+        "Industry standard for traditional PM",
+        "Powerful scheduling and resource tools",
+        "Deep Microsoft 365 integration",
+        "Excellent for waterfall projects",
+        "Desktop app is very powerful"
+      ],
+      "cons": [
+        "Steep learning curve",
+        "Expensive for full features",
+        "Not ideal for agile workflows",
+        "Web version less capable than desktop"
+      ],
+      "use_cases": [
+        "Construction project management",
+        "IT infrastructure projects",
+        "Traditional waterfall projects",
+        "Enterprise program management"
+      ],
+      "integrations": ["Microsoft Teams", "SharePoint", "Power BI", "Azure DevOps", "Dynamics 365"],
+      "affiliate_link": "https://microsoft.com/project/?ref=yoursite"
+    }
+  ]
+}
