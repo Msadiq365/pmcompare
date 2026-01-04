@@ -83,232 +83,249 @@ export default function StartupToolBudgetCalculator() {
           </p>
         </header>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', marginBottom: '50px' }}>
-          {/* Calculator Form */}
-          <div style={{ background: '#f8fafc', padding: '30px', borderRadius: '12px' }}>
-            <h2 style={{ marginBottom: '30px', color: '#2d3748' }}>📊 Your Startup Details</h2>
-            
-            {/* Team Size Input */}
-            <div style={{ marginBottom: '30px' }}>
-              <label style={{ display: 'block', marginBottom: '10px', fontWeight: '600', color: '#4a5568' }}>
-                Team Size: <span style={{ fontSize: '1.2rem', color: '#667eea' }}>{teamSize}</span> people
-              </label>
-              <input
-                type="range"
-                min="1"
-                max="100"
-                value={teamSize}
-                onChange={(e) => setTeamSize(parseInt(e.target.value))}
-                style={{ width: '100%', height: '8px', borderRadius: '4px', background: '#e2e8f0' }}
-              />
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px', fontSize: '0.85rem', color: '#718096' }}>
-                <span>1</span>
-                <span>10</span>
-                <span>25</span>
-                <span>50</span>
-                <span>100+</span>
-              </div>
-            </div>
-            
-            {/* Stage Selector */}
-            <div style={{ marginBottom: '30px' }}>
-              <label style={{ display: 'block', marginBottom: '15px', fontWeight: '600', color: '#4a5568' }}>
-                Startup Stage
-              </label>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px' }}>
-                {[
-                  { id: 'pre-seed', label: 'Pre-Seed', desc: '1-5 people' },
-                  { id: 'seed', label: 'Seed', desc: '5-15 people' },
-                  { id: 'series-a', label: 'Series A', desc: '15-50 people' },
-                  { id: 'growth', label: 'Growth', desc: '50+ people' }
-                ].map((option) => (
-                  <label 
-                    key={option.id}
-                    style={{
-                      padding: '15px',
-                      background: stage === option.id ? 'white' : '#fff',
-                      borderRadius: '8px',
-                      border: stage === option.id ? '2px solid #667eea' : '1px solid #e2e8f0',
-                      cursor: 'pointer',
-                      textAlign: 'center'
-                    }}
-                  >
-                    <input
-                      type="radio"
-                      name="stage"
-                      value={option.id}
-                      checked={stage === option.id}
-                      onChange={(e) => setStage(e.target.value)}
-                      style={{ display: 'none' }}
-                    />
-                    <div style={{ fontWeight: '600', marginBottom: '5px', color: '#2d3748' }}>
-                      {option.label}
-                    </div>
-                    <div style={{ fontSize: '0.8rem', color: '#718096' }}>
-                      {option.desc}
-                    </div>
-                  </label>
-                ))}
-              </div>
-            </div>
-            
-            {/* Tool Count */}
-            <div style={{ marginBottom: '30px' }}>
-              <label style={{ display: 'block', marginBottom: '10px', fontWeight: '600', color: '#4a5568' }}>
-                Number of PM Tools Needed: <span style={{ fontSize: '1.2rem', color: '#667eea' }}>{toolCount}</span>
-              </label>
-              <div style={{ display: 'flex', gap: '10px' }}>
-                {[1, 2, 3, 4, 5].map((num) => (
-                  <button
-                    key={num}
-                    type="button"
-                    onClick={() => setToolCount(num)}
-                    style={{
-                      flex: 1,
-                      padding: '12px',
-                      background: toolCount === num ? '#667eea' : '#f7fafc',
-                      color: toolCount === num ? 'white' : '#4a5568',
-                      border: toolCount === num ? 'none' : '1px solid #e2e8f0',
-                      borderRadius: '6px',
-                      cursor: 'pointer',
-                      fontWeight: '600'
-                    }}
-                  >
-                    {num}
-                  </button>
-                ))}
-              </div>
-              <div style={{ fontSize: '0.85rem', color: '#718096', marginTop: '10px' }}>
-                Most startups use 2-3 core project management tools
-              </div>
-            </div>
-            
-            {/* Support Toggle */}
-            <div style={{ marginBottom: '30px' }}>
-              <label style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', cursor: 'pointer' }}>
-                <div>
-                  <div style={{ fontWeight: '600', color: '#4a5568', marginBottom: '5px' }}>
-                    Include Training & Support
-                  </div>
-                  <div style={{ fontSize: '0.85rem', color: '#718096' }}>
-                    Recommended for teams over 10 people
-                  </div>
-                </div>
-                <div style={{ position: 'relative' }}>
-                  <input
-                    type="checkbox"
-                    checked={includeSupport}
-                    onChange={(e) => setIncludeSupport(e.target.checked)}
-                    style={{ display: 'none' }}
-                    id="support-toggle"
-                  />
-                  <label 
-                    htmlFor="support-toggle"
-                    style={{
-                      display: 'inline-block',
-                      width: '50px',
-                      height: '26px',
-                      background: includeSupport ? '#667eea' : '#e2e8f0',
-                      borderRadius: '13px',
-                      position: 'relative',
-                      cursor: 'pointer',
-                      transition: 'background 0.2s'
-                    }}
-                  >
-                    <div style={{
-                      position: 'absolute',
-                      top: '3px',
-                      left: includeSupport ? '27px' : '3px',
-                      width: '20px',
-                      height: '20px',
-                      background: 'white',
-                      borderRadius: '50%',
-                      transition: 'left 0.2s',
-                      boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-                    }}></div>
-                  </label>
-                </div>
-              </label>
-            </div>
-            
-            {/* Reset Button */}
-            <button
-              type="button"
-              onClick={() => {
-                setTeamSize(5)
-                setStage('seed')
-                setToolCount(3)
-                setIncludeSupport(true)
-              }}
-              style={{
-                width: '100%',
-                padding: '12px',
-                background: 'transparent',
-                color: '#667eea',
-                border: '1px solid #667eea',
-                borderRadius: '6px',
-                cursor: 'pointer',
-                fontWeight: '600',
-                fontSize: '0.95rem'
-              }}
-            >
-              Reset to Default Values
-            </button>
-          </div>
+        {/* Calculator Section - Responsive */}
+        <div style={{ marginBottom: '50px' }}>
+          <style jsx>{`
+            @media (min-width: 768px) {
+              .calculator-container {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr !important;
+                gap: 40px !important;
+              }
+            }
+          `}</style>
           
-          {/* Results Display */}
-          <div style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', padding: '30px', borderRadius: '12px', color: 'white' }}>
-            <h2 style={{ marginBottom: '30px', color: 'white' }}>💰 Your Budget Estimate</h2>
-            
-            <div style={{ background: 'rgba(255, 255, 255, 0.1)', padding: '25px', borderRadius: '8px', marginBottom: '25px' }}>
-              <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-                <div style={{ fontSize: '0.9rem', opacity: 0.9, marginBottom: '5px' }}>Monthly Budget</div>
-                <div style={{ fontSize: '3rem', fontWeight: 'bold' }}>${budget.monthly}</div>
-                <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>per month</div>
+          <div className="calculator-container" style={{ 
+            display: 'flex', 
+            flexDirection: 'column', 
+            gap: '40px' 
+          }}>
+            {/* Calculator Form */}
+            <div style={{ background: '#f8fafc', padding: '30px', borderRadius: '12px' }}>
+              <h2 style={{ marginBottom: '30px', color: '#2d3748' }}>📊 Your Startup Details</h2>
+              
+              {/* Team Size Input */}
+              <div style={{ marginBottom: '30px' }}>
+                <label style={{ display: 'block', marginBottom: '10px', fontWeight: '600', color: '#4a5568' }}>
+                  Team Size: <span style={{ fontSize: '1.2rem', color: '#667eea' }}>{teamSize}</span> people
+                </label>
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value={teamSize}
+                  onChange={(e) => setTeamSize(parseInt(e.target.value))}
+                  style={{ width: '100%', height: '8px', borderRadius: '4px', background: '#e2e8f0' }}
+                />
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px', fontSize: '0.85rem', color: '#718096' }}>
+                  <span>1</span>
+                  <span>10</span>
+                  <span>25</span>
+                  <span>50</span>
+                  <span>100+</span>
+                </div>
               </div>
               
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px', paddingBottom: '15px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>Per person per month</div>
-                <div style={{ fontWeight: '600' }}>${budget.perUserPerMonth}</div>
+              {/* Stage Selector */}
+              <div style={{ marginBottom: '30px' }}>
+                <label style={{ display: 'block', marginBottom: '15px', fontWeight: '600', color: '#4a5568' }}>
+                  Startup Stage
+                </label>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px' }}>
+                  {[
+                    { id: 'pre-seed', label: 'Pre-Seed', desc: '1-5 people' },
+                    { id: 'seed', label: 'Seed', desc: '5-15 people' },
+                    { id: 'series-a', label: 'Series A', desc: '15-50 people' },
+                    { id: 'growth', label: 'Growth', desc: '50+ people' }
+                  ].map((option) => (
+                    <label 
+                      key={option.id}
+                      style={{
+                        padding: '15px',
+                        background: stage === option.id ? 'white' : '#fff',
+                        borderRadius: '8px',
+                        border: stage === option.id ? '2px solid #667eea' : '1px solid #e2e8f0',
+                        cursor: 'pointer',
+                        textAlign: 'center'
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="stage"
+                        value={option.id}
+                        checked={stage === option.id}
+                        onChange={(e) => setStage(e.target.value)}
+                        style={{ display: 'none' }}
+                      />
+                      <div style={{ fontWeight: '600', marginBottom: '5px', color: '#2d3748' }}>
+                        {option.label}
+                      </div>
+                      <div style={{ fontSize: '0.8rem', color: '#718096' }}>
+                        {option.desc}
+                      </div>
+                    </label>
+                  ))}
+                </div>
               </div>
               
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px', paddingBottom: '15px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>Annual Budget</div>
-                <div style={{ fontWeight: '600' }}>${budget.annual}</div>
+              {/* Tool Count */}
+              <div style={{ marginBottom: '30px' }}>
+                <label style={{ display: 'block', marginBottom: '10px', fontWeight: '600', color: '#4a5568' }}>
+                  Number of PM Tools Needed: <span style={{ fontSize: '1.2rem', color: '#667eea' }}>{toolCount}</span>
+                </label>
+                <div style={{ display: 'flex', gap: '10px' }}>
+                  {[1, 2, 3, 4, 5].map((num) => (
+                    <button
+                      key={num}
+                      type="button"
+                      onClick={() => setToolCount(num)}
+                      style={{
+                        flex: 1,
+                        padding: '12px',
+                        background: toolCount === num ? '#667eea' : '#f7fafc',
+                        color: toolCount === num ? 'white' : '#4a5568',
+                        border: toolCount === num ? 'none' : '1px solid #e2e8f0',
+                        borderRadius: '6px',
+                        cursor: 'pointer',
+                        fontWeight: '600'
+                      }}
+                    >
+                      {num}
+                    </button>
+                  ))}
+                </div>
+                <div style={{ fontSize: '0.85rem', color: '#718096', marginTop: '10px' }}>
+                  Most startups use 2-3 core project management tools
+                </div>
               </div>
               
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>Implementation/Training</div>
-                <div style={{ fontWeight: '600' }}>${budget.implementation}</div>
+              {/* Support Toggle */}
+              <div style={{ marginBottom: '30px' }}>
+                <label style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', cursor: 'pointer' }}>
+                  <div>
+                    <div style={{ fontWeight: '600', color: '#4a5568', marginBottom: '5px' }}>
+                      Include Training & Support
+                    </div>
+                    <div style={{ fontSize: '0.85rem', color: '#718096' }}>
+                      Recommended for teams over 10 people
+                    </div>
+                  </div>
+                  <div style={{ position: 'relative' }}>
+                    <input
+                      type="checkbox"
+                      checked={includeSupport}
+                      onChange={(e) => setIncludeSupport(e.target.checked)}
+                      style={{ display: 'none' }}
+                      id="support-toggle"
+                    />
+                    <label 
+                      htmlFor="support-toggle"
+                      style={{
+                        display: 'inline-block',
+                        width: '50px',
+                        height: '26px',
+                        background: includeSupport ? '#667eea' : '#e2e8f0',
+                        borderRadius: '13px',
+                        position: 'relative',
+                        cursor: 'pointer',
+                        transition: 'background 0.2s'
+                      }}
+                    >
+                      <div style={{
+                        position: 'absolute',
+                        top: '3px',
+                        left: includeSupport ? '27px' : '3px',
+                        width: '20px',
+                        height: '20px',
+                        background: 'white',
+                        borderRadius: '50%',
+                        transition: 'left 0.2s',
+                        boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+                      }}></div>
+                    </label>
+                  </div>
+                </label>
               </div>
-            </div>
-            
-            <div style={{ background: 'rgba(255, 255, 255, 0.1)', padding: '20px', borderRadius: '8px', marginBottom: '25px' }}>
-              <h4 style={{ marginBottom: '15px', color: 'white' }}>💡 Budget Breakdown</h4>
-              <ul style={{ paddingLeft: '20px', opacity: 0.9, fontSize: '0.9rem' }}>
-                <li style={{ marginBottom: '8px' }}>Core tool subscriptions: ${Math.round(budget.monthly * 0.7)}</li>
-                <li style={{ marginBottom: '8px' }}>Add-ons & integrations: ${Math.round(budget.monthly * 0.2)}</li>
-                <li style={{ marginBottom: '8px' }}>Support & training: ${Math.round(budget.monthly * 0.1)}</li>
-              </ul>
-            </div>
-            
-            <div style={{ textAlign: 'center' }}>
-              <Link
-                href="/blog/project-management-for-startups"
+              
+              {/* Reset Button */}
+              <button
+                type="button"
+                onClick={() => {
+                  setTeamSize(5)
+                  setStage('seed')
+                  setToolCount(3)
+                  setIncludeSupport(true)
+                }}
                 style={{
-                  display: 'inline-block',
-                  padding: '14px 30px',
-                  background: 'white',
+                  width: '100%',
+                  padding: '12px',
+                  background: 'transparent',
                   color: '#667eea',
-                  border: 'none',
-                  borderRadius: '8px',
-                  textDecoration: 'none',
+                  border: '1px solid #667eea',
+                  borderRadius: '6px',
+                  cursor: 'pointer',
                   fontWeight: '600',
-                  fontSize: '1rem'
+                  fontSize: '0.95rem'
                 }}
               >
-                See Tool Recommendations →
-              </Link>
+                Reset to Default Values
+              </button>
+            </div>
+            
+            {/* Results Display */}
+            <div style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', padding: '30px', borderRadius: '12px', color: 'white' }}>
+              <h2 style={{ marginBottom: '30px', color: 'white' }}>💰 Your Budget Estimate</h2>
+              
+              <div style={{ background: 'rgba(255, 255, 255, 0.1)', padding: '25px', borderRadius: '8px', marginBottom: '25px' }}>
+                <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+                  <div style={{ fontSize: '0.9rem', opacity: 0.9, marginBottom: '5px' }}>Monthly Budget</div>
+                  <div style={{ fontSize: '3rem', fontWeight: 'bold' }}>${budget.monthly}</div>
+                  <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>per month</div>
+                </div>
+                
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px', paddingBottom: '15px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
+                  <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>Per person per month</div>
+                  <div style={{ fontWeight: '600' }}>${budget.perUserPerMonth}</div>
+                </div>
+                
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px', paddingBottom: '15px', borderBottom: '1px solid rgba(255, 255, 255, 0.2)' }}>
+                  <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>Annual Budget</div>
+                  <div style={{ fontWeight: '600' }}>${budget.annual}</div>
+                </div>
+                
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                  <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>Implementation/Training</div>
+                  <div style={{ fontWeight: '600' }}>${budget.implementation}</div>
+                </div>
+              </div>
+              
+              <div style={{ background: 'rgba(255, 255, 255, 0.1)', padding: '20px', borderRadius: '8px', marginBottom: '25px' }}>
+                <h4 style={{ marginBottom: '15px', color: 'white' }}>💡 Budget Breakdown</h4>
+                <ul style={{ paddingLeft: '20px', opacity: 0.9, fontSize: '0.9rem' }}>
+                  <li style={{ marginBottom: '8px' }}>Core tool subscriptions: ${Math.round(budget.monthly * 0.7)}</li>
+                  <li style={{ marginBottom: '8px' }}>Add-ons & integrations: ${Math.round(budget.monthly * 0.2)}</li>
+                  <li style={{ marginBottom: '8px' }}>Support & training: ${Math.round(budget.monthly * 0.1)}</li>
+                </ul>
+              </div>
+              
+              <div style={{ textAlign: 'center' }}>
+                <Link
+                  href="/blog/project-management-for-startups"
+                  style={{
+                    display: 'inline-block',
+                    padding: '14px 30px',
+                    background: 'white',
+                    color: '#667eea',
+                    border: 'none',
+                    borderRadius: '8px',
+                    textDecoration: 'none',
+                    fontWeight: '600',
+                    fontSize: '1rem'
+                  }}
+                >
+                  See Tool Recommendations →
+                </Link>
+              </div>
             </div>
           </div>
         </div>

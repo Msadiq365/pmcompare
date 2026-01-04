@@ -44,7 +44,7 @@
         "Event planning"
       ],
       "integrations": ["Slack", "Google Drive", "Microsoft Teams", "Salesforce", "Adobe Creative Cloud"],
-      "affiliate_link": "https://asana.com/?ref=yoursite"
+      "affiliate_link": "https://asana.com"
     },
     {
       "id": "monday",
@@ -91,7 +91,7 @@
         "HR onboarding processes"
       ],
       "integrations": ["Slack", "Zoom", "Gmail", "Outlook", "Salesforce"],
-      "affiliate_link": "https://monday.com/?ref=yoursite"
+      "affiliate_link": "https://monday.com"
     },
     {
       "id": "clickup",
@@ -137,7 +137,7 @@
         "Personal productivity"
       ],
       "integrations": ["Slack", "GitHub", "GitLab", "Figma", "Harvest"],
-      "affiliate_link": "https://clickup.com/?ref=yoursite"
+      "affiliate_link": "https://clickup.com"
     },
     {
       "id": "trello",
@@ -184,7 +184,7 @@
         "Agile sprint boards"
       ],
       "integrations": ["Slack", "Google Drive", "Jira", "Confluence", "Dropbox"],
-      "affiliate_link": "https://trello.com/?ref=yoursite"
+      "affiliate_link": "https://trello.com"
     },
     {
       "id": "notion",
@@ -230,7 +230,7 @@
         "Product roadmaps"
       ],
       "integrations": ["Slack", "Google Drive", "Figma", "GitHub", "Zapier"],
-      "affiliate_link": "https://notion.so/?ref=yoursite"
+      "affiliate_link": "https://notion.so"
     },
     {
       "id": "basecamp",
@@ -275,7 +275,7 @@
         "Freelance project coordination"
       ],
       "integrations": ["Zapier", "Slack", "Google Calendar", "Time tracking tools", "Email"],
-      "affiliate_link": "https://basecamp.com/?ref=yoursite"
+      "affiliate_link": "https://basecamp.com"
     },
     {
       "id": "wrike",
@@ -321,7 +321,7 @@
         "Professional services"
       ],
       "integrations": ["Salesforce", "Adobe Creative Cloud", "Microsoft Teams", "Slack", "Google Drive"],
-      "affiliate_link": "https://wrike.com/?ref=yoursite"
+      "affiliate_link": "https://wrike.com"
     },
     {
       "id": "smartsheet",
@@ -367,7 +367,7 @@
         "Financial planning"
       ],
       "integrations": ["Microsoft Office 365", "Google Workspace", "Salesforce", "Jira", "Slack"],
-      "affiliate_link": "https://smartsheet.com/?ref=yoursite"
+      "affiliate_link": "https://smartsheet.com"
     },
     {
       "id": "airtable",
@@ -413,7 +413,7 @@
         "Inventory management"
       ],
       "integrations": ["Slack", "Google Drive", "Dropbox", "Mailchimp", "Zapier"],
-      "affiliate_link": "https://airtable.com/?ref=yoursite"
+      "affiliate_link": "https://airtable.com"
     },
     {
       "id": "jira",
@@ -459,7 +459,7 @@
         "Product management"
       ],
       "integrations": ["GitHub", "Bitbucket", "Confluence", "Slack", "Microsoft Teams"],
-      "affiliate_link": "https://jira.atlassian.com/?ref=yoursite"
+      "affiliate_link": "https://jira.atlassian.com"
     },
     {
       "id": "teamwork",
@@ -506,7 +506,7 @@
         "Billable work tracking"
       ],
       "integrations": ["Slack", "HubSpot", "Xero", "QuickBooks", "Google Drive"],
-      "affiliate_link": "https://teamwork.com/?ref=yoursite"
+      "affiliate_link": "https://teamwork.com"
     },
     {
       "id": "zoho-projects",
@@ -552,7 +552,7 @@
         "Budget-conscious teams"
       ],
       "integrations": ["Zoho CRM", "Zoho Desk", "Google Workspace", "Slack", "Microsoft Teams"],
-      "affiliate_link": "https://zoho.com/projects/?ref=yoursite"
+      "affiliate_link": "https://zoho.com/projects"
     },
     {
       "id": "podio",
@@ -599,7 +599,7 @@
         "Team collaboration"
       ],
       "integrations": ["Google Drive", "Dropbox", "Zendesk", "Evernote", "ShareFile"],
-      "affiliate_link": "https://podio.com/?ref=yoursite"
+      "affiliate_link": "https://podio.com"
     },
     {
       "id": "proofhub",
@@ -645,7 +645,7 @@
         "Agency work"
       ],
       "integrations": ["Google Drive", "Dropbox", "OneDrive", "Box", "FreshBooks"],
-      "affiliate_link": "https://proofhub.com/?ref=yoursite"
+      "affiliate_link": "https://proofhub.com"
     },
     {
       "id": "paymo",
@@ -692,7 +692,7 @@
         "Client project management"
       ],
       "integrations": ["Zapier", "Google Calendar", "Slack", "QuickBooks", "Xero"],
-      "affiliate_link": "https://paymo.biz/?ref=yoursite"
+      "affiliate_link": "https://paymo.biz"
     },
     {
       "id": "hive",
@@ -738,7 +738,7 @@
         "Cross-functional projects"
       ],
       "integrations": ["Slack", "Zoom", "Google Drive", "Dropbox", "Salesforce"],
-      "affiliate_link": "https://hive.com/?ref=yoursite"
+      "affiliate_link": "https://hive.com"
     },
     {
       "id": "infinity",
@@ -784,7 +784,7 @@
         "Personal organization"
       ],
       "integrations": ["Zapier", "Slack", "Gmail", "Google Calendar", "Clockify"],
-      "affiliate_link": "https://startinfinity.com/?ref=yoursite"
+      "affiliate_link": "https://startinfinity.com"
     },
     {
       "id": "scoro",
@@ -831,7 +831,7 @@
         "Professional services"
       ],
       "integrations": ["Xero", "QuickBooks", "Google Workspace", "Outlook", "Slack"],
-      "affiliate_link": "https://scoro.com/?ref=yoursite"
+      "affiliate_link": "https://scoro.com"
     },
     {
       "id": "ntask",
@@ -877,7 +877,7 @@
         "Personal productivity"
       ],
       "integrations": ["Slack", "Google Calendar", "Zoom", "Outlook", "Zapier"],
-      "affiliate_link": "https://ntaskmanager.com/?ref=yoursite"
+      "affiliate_link": "https://ntaskmanager.com"
     },
     {
       "id": "microsoft-project",
@@ -924,7 +924,7 @@
         "Enterprise program management"
       ],
       "integrations": ["Microsoft Teams", "SharePoint", "Power BI", "Azure DevOps", "Dynamics 365"],
-      "affiliate_link": "https://microsoft.com/project/?ref=yoursite"
+      "affiliate_link": "https://microsoft.com/project"
     }
   ]
 }
