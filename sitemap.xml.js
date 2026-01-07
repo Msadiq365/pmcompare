@@ -1,11 +1,11 @@
 export async function getServerSideProps({ res }) {
   const baseUrl = 'https://pmcompare.com'
 
-  // Add ALL your important routes here
+  // TODO: Replace with dynamic routes from your data
   const urls = [
     '/',
-    '/comparisons',
     '/tools',
+    '/comparisons',
     '/alternatives'
   ]
 
@@ -14,6 +14,7 @@ export async function getServerSideProps({ res }) {
 ${urls.map(url => `
   <url>
     <loc>${baseUrl}${url}</loc>
+    <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -21,7 +22,7 @@ ${urls.map(url => `
 </urlset>`
 
   res.setHeader('Content-Type', 'text/xml')
-  res.setHeader('Cache-Control', 'no-store')
+  res.setHeader('Cache-Control', 'no-store, must-revalidate')
   res.write(sitemap)
   res.end()
 
