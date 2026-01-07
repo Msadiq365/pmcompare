@@ -1,8 +1,8 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://pmcompare.com', // 🔹 Update to your new domain
-  generateRobotsTxt: true,              // Generates robots.txt automatically
-  sitemapSize: 7000,                     // Optional: split sitemap if very large
+  siteUrl: 'https://pmcompare.com', // ✅ production domain
+  generateRobotsTxt: true,
   changefreq: 'daily',
-  priority: 0.7
+  priority: 0.7,
+  sitemapSize: 50000, // optional, keeps all URLs in one sitemap if small site
 };
