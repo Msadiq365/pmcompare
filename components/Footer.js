@@ -107,13 +107,13 @@ export default function Footer() {
           </div>
           
           <div className="legal-bottom">
-            <div className="legal-links">
-              <Link href="/privacy">Privacy Policy</Link>
-              <Link href="/terms">Terms of Service</Link>
-              <Link href="/privacy">Cookie Policy</Link>
-              <Link href="/disclaimer">Disclaimer</Link>
-              <Link href="/contact">Contact Us</Link>
-            </div>
+<div className="legal-links">
+  <Link href="/privacy">Privacy Policy</Link>
+  <Link href="/terms">Terms of Service</Link>
+  <Link href="/cookie">Cookie Policy</Link>
+  <Link href="/disclaimer">Disclaimer</Link>
+  <Link href="/contact">Contact Us</Link>
+</div>
             
             <div className="copyright">
               <p>&copy; {currentYear} PM Compare. All rights reserved.</p>
@@ -154,7 +154,7 @@ export default function Footer() {
         .footer-logo h3 {
           font-size: 1.875rem;
           font-weight: bold;
-          color: #111827;
+          color: #1738f1ff;
           margin-bottom: 1rem;
         }
         
@@ -164,11 +164,11 @@ export default function Footer() {
           line-height: 1.6;
         }
         
-        .footer-tools h5 {
-          font-weight: 600;
-          color: #2ce607ff;
-          margin-bottom: 1rem;
-        }
+.footer-tools h5 {
+  font-weight: 600;
+  color: #1738f1ff;
+  margin-bottom: 1rem;
+}
         
         .tool-links {
           display: flex;
@@ -188,12 +188,12 @@ export default function Footer() {
           color: #1d4ed8;
         }
         
-        .footer-section h4 {
-          font-weight: 600;
-          color: #2ce607ff;
-          margin-bottom: 1rem;
-          font-size: 1rem;
-        }
+.footer-section h4 {
+  font-weight: 600;
+  color: #1738f1ff;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
         
         .footer-links {
           list-style: none;
@@ -227,7 +227,7 @@ export default function Footer() {
         .footer-banner h4 {
           font-size: 1.5rem;
           font-weight: bold;
-          color: #111827;
+          color: #1738f1ff;
           margin-bottom: 0.5rem;
         }
         
@@ -284,12 +284,11 @@ export default function Footer() {
           padding-top: 2rem;
         }
         
-        .disclosure h5 {
-          font-weight: 600;
-          color: #ffff;
-          margin-bottom: 0.5rem;
-          font-size: 1.5rem;
-        }
+.disclosure h5 {
+  font-weight: 600;
+  color: #1738f1ff;
+  margin-bottom: 0.5rem;
+}
         
         .disclosure-text {
           color: #6b7280;

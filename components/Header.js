@@ -36,27 +36,25 @@ export default function Header() {
           {mobileMenuOpen ? '✕' : '☰'}
         </button>
 
-        {/* Desktop Navigation */}
-        <nav className="main-nav desktop-nav">
-          <Link href="/">Home</Link>
-          <Link href="/comparisons">Compare Tools</Link>
-          <Link href="/blog">Blog</Link>
-          <Link href="/about">About</Link>
-          <Link href="/privacy">Privacy Policy</Link>
-          
-        </nav>
+{/* Desktop Navigation */}
+<nav className="main-nav desktop-nav">
+  <Link href="/">Home</Link>
+  <Link href="/comparisons">Compare Tools</Link>
+  <Link href="/blog">Blog</Link>
+  <Link href="/about">About</Link>
+  <Link href="/contact">Contact Us</Link>
+</nav>
 
-        {/* Mobile Navigation Menu */}
-        {mobileMenuOpen && (
-          <div className="mobile-nav">
-            <Link href="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-            <Link href="/comparisons" onClick={() => setMobileMenuOpen(false)}>Compare Tools</Link>
-            <Link href="/blog" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
-            <Link href="/about">About</Link>
-            <Link href="/privacy" onClick={() => setMobileMenuOpen(false)}>Privacy Policy</Link>
-            
-          </div>
-        )}
+{/* Mobile Navigation Menu */}
+{mobileMenuOpen && (
+  <div className="mobile-nav">
+    <Link href="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+    <Link href="/comparisons" onClick={() => setMobileMenuOpen(false)}>Compare Tools</Link>
+    <Link href="/blog" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
+    <Link href="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
+    <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
+  </div>
+)}
       </div>
 
       {/* Mobile CSS */}

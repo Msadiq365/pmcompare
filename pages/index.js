@@ -207,10 +207,11 @@ export default function Home() {
         {/* Hero Section with Search */}
         <section className="hero-section">
           <div className="hero-content">
-            <h1 className="hero-title">
-              Find Your Perfect<br />
-              <span className="highlight">Project Management Tool</span>
-            </h1>
+           
+     <p className="hero-title">Find Your Perfect</p>
+     <h1 className="highlight" style={{textAlign: 'center', margin: '0 auto', display: 'block'}}>
+  Project Management Tool</h1>
+
             <p className="hero-description">
               Compare features, pricing, and reviews of the top project management 
               software to make the right choice for your team.

@@ -107,7 +107,7 @@ export default function Privacy() {
               If you have questions or concerns about this privacy policy, please contact us:
             </p>
             <div style={{ background: '#f7fafc', padding: '20px', borderRadius: '8px', marginTop: '15px' }}>
-              <p style={{ margin: 0 }}><strong>Email:</strong> privacy@pmcompare.com</p>
+              <p style={{ margin: 0 }}><strong>Email:</strong> info@pmcompare.com</p>
               <p style={{ margin: '10px 0 0 0' }}>
                 <strong>Contact Form:</strong> <Link href="/contact" style={{ color: '#667eea' }}>Send us a message</Link>
               </p>

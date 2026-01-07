@@ -183,18 +183,21 @@ button {
 
 .hero-title {
   font-size: 3.5rem;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   color: #fbbf24;
-  width: 100%;
   text-align: center;
 }
 
 .highlight {
-  display: inline-block;
-  width: 100%;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  color: #fbbf24;
   text-align: center;
+  display: block;
 }
 
 .hero-description {

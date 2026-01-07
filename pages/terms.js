@@ -241,29 +241,16 @@ export default function Terms() {
             </p>
           </section>
 
+          
           <section style={{ marginBottom: '40px' }}>
             <h2 style={{ fontSize: '1.8rem', marginBottom: '15px', color: '#2d3748' }}>
-              13. Governing Law
-            </h2>
-            <p>
-              These Terms shall be governed by and construed in accordance with the laws of [Your Country/State], 
-              without regard to its conflict of law provisions.
-            </p>
-            <p style={{ marginTop: '15px' }}>
-              Any disputes arising from these Terms or your use of the Site shall be resolved in the courts 
-              of [Your Jurisdiction].
-            </p>
-          </section>
-
-          <section style={{ marginBottom: '40px' }}>
-            <h2 style={{ fontSize: '1.8rem', marginBottom: '15px', color: '#2d3748' }}>
-              14. Contact Information
+              13. Contact Information
             </h2>
             <p>
               If you have questions about these Terms, please contact us:
             </p>
             <div style={{ background: '#f7fafc', padding: '20px', borderRadius: '8px', marginTop: '15px' }}>
-              <p style={{ margin: 0 }}><strong>Email:</strong> legal@pmcompare.com</p>
+              <p style={{ margin: 0 }}><strong>Email:</strong> info@pmcompare.com</p>
               <p style={{ margin: '10px 0 0 0' }}>
                 <strong>Contact Form:</strong> <Link href="/contact" style={{ color: '#667eea' }}>Send us a message</Link>
               </p>
