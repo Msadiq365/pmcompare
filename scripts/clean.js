@@ -17,23 +17,7 @@ if (fs.existsSync(publicDir)) {
     const files = fs.readdirSync(publicDir);
     let deletedCount = 0;
     
-    files.forEach(file => {
-      // Delete ANY sitemap file
-      if (file.includes('sitemap') && file.endsWith('.xml')) {
-        const filePath = path.join(publicDir, file);
-        fs.unlinkSync(filePath);
-        console.log(`✅ Deleted: ${file}`);
-        deletedCount++;
-      }
-      // Delete robots.txt
-      if (file === 'robots.txt') {
-        const filePath = path.join(publicDir, file);
-        fs.unlinkSync(filePath);
-        console.log(`✅ Deleted: ${file}`);
-        deletedCount++;
-      }
-    });
-    
+        
     console.log(`🗑️ Deleted ${deletedCount} files`);
   } catch (err) {
     console.log('⚠️ Error cleaning public directory:', err.message);
