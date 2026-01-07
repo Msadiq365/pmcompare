@@ -2,41 +2,49 @@
 const fs = require('fs');
 const path = require('path');
 
-console.log('Cleaning sitemap files...');
+console.log('🧹 Cleaning ALL generated files...');
 
-const filesToDelete = [
-  'public/sitemap.xml',
-  'public/robots.txt'
+const publicDir = path.join(__dirname, '../public');
+
+// Delete ALL sitemap and robots files
+const patternsToDelete = [
+  'sitemap*.xml',
+  'robots.txt'
 ];
 
-// Delete specific files
-filesToDelete.forEach(file => {
-  const filePath = path.join(__dirname, '..', file);
-  if (fs.existsSync(filePath)) {
-    try {
-      fs.unlinkSync(filePath);
-      console.log(`✓ Deleted: ${file}`);
-    } catch (err) {
-      console.log(`✗ Error deleting ${file}:`, err.message);
-    }
-  }
-});
-
-// Delete sitemap-*.xml files
-const publicDir = path.join(__dirname, '../public');
 if (fs.existsSync(publicDir)) {
   try {
     const files = fs.readdirSync(publicDir);
+    let deletedCount = 0;
+    
     files.forEach(file => {
-      if (file.startsWith('sitemap-') && file.endsWith('.xml')) {
+      // Delete ANY sitemap file
+      if (file.includes('sitemap') && file.endsWith('.xml')) {
         const filePath = path.join(publicDir, file);
         fs.unlinkSync(filePath);
-        console.log(`✓ Deleted: public/${file}`);
+        console.log(`✅ Deleted: ${file}`);
+        deletedCount++;
+      }
+      // Delete robots.txt
+      if (file === 'robots.txt') {
+        const filePath = path.join(publicDir, file);
+        fs.unlinkSync(filePath);
+        console.log(`✅ Deleted: ${file}`);
+        deletedCount++;
       }
     });
+    
+    console.log(`🗑️ Deleted ${deletedCount} files`);
   } catch (err) {
-    console.log('✗ Error reading public directory:', err.message);
+    console.log('⚠️ Error cleaning public directory:', err.message);
   }
 }
 
-console.log('Cleanup complete!');
+// Also clean .next cache (important!)
+const nextDir = path.join(__dirname, '../.next');
+if (fs.existsSync(nextDir)) {
+  console.log('⚠️ Note: For complete cleanup, also delete .next folder');
+  console.log('   Run: rm -rf .next  or  rmdir /s /q .next');
+}
+
+console.log('🎉 Cleanup complete!');

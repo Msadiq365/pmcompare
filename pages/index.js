@@ -8,6 +8,7 @@ import ImprovedToolSelector from '../components/ImprovedToolSelector'
 import SEO from '../components/SEO'
 import toolsData from '../data/tools.json'
 import Image from 'next/image'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   const tools = toolsData.tools
