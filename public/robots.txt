@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://pmcompare.com
+
+# Sitemaps
+Sitemap: https://pmcompare.com/sitemap.xml
