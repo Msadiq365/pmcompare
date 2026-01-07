@@ -1,0 +1,17 @@
+# *
+User-agent: *
+Allow: /
+
+# AhrefsBot
+User-agent: AhrefsBot
+Disallow: /
+
+# SemrushBot
+User-agent: SemrushBot
+Disallow: /
+
+# Host
+Host: https://pmcompare.com
+
+# Sitemaps
+Sitemap: https://pmcompare.com/sitemap.xml

@@ -1,10 +1,9 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://pm-compare.vercel.app',
+  siteUrl: 'https://pmcompare.com', // ← CHANGED TO THE NEW DOMAIN
   generateRobotsTxt: true,
   outDir: 'public',
   
-  // CRITICAL: Exclude these pages
   exclude: [
     '/privacy',
     '/cookie-policy', 
@@ -13,13 +12,11 @@ module.exports = {
     '/admin',
     '/view-subscribers',
     '/cookie',
-    '/sitemap.xml'  // ← ADD THIS: Exclude the sitemap index itself
+    '/sitemap.xml'
   ],
   
-  // Important settings
   changefreq: 'weekly',
   priority: 0.7,
-  sitemapSize: 7000,
   
   robotsTxtOptions: {
     policies: [
@@ -28,4 +25,4 @@ module.exports = {
       { userAgent: 'SemrushBot', disallow: '/' },
     ],
   },
-}
+};
